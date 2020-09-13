@@ -18,7 +18,7 @@ app.get("/service",function(req, res){
 app.get("/gallery", function(req, res){
     res.send("You are in page gallery")
 })
-//github ♥
+//github ♥♥
 app.get("/about",function(req, res){
     res.send("You are in page about");
 });
