@@ -5,7 +5,6 @@ const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 const authConfig = require('../../config/auth.json');
 const mailer = require('../../modules/mailer');
-const { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } = require('constants');
 const router = express.Router();
 
 function generateToken(params = {}) {
