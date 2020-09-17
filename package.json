@@ -12,7 +12,13 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.5",
+    "nodemailer": "^6.4.11",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "got": "^11.3.0",
