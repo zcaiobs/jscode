@@ -80,8 +80,8 @@ console.log({ email });
             to: email,
             from: 'zcaiobernardodasilva@gmail.com',
             subject: 'Cadastre uma nova senha',
-            template: 'auth/forgot_password',
-            context: { token },
+            template: 'auth/forgot_password', 
+            context: { token, email }, 
         }), (err) => {
             if (err)
                 return res.status(400).send({ error: 'Cannot send forgot password email' });
@@ -115,9 +115,9 @@ router.post('/reset_password', async (req, res) => {
 
         user.password = password;
 
-        await user.save();
+        await user.save(); 
 
-        res.send();
+        res.send({ status: 'Your password has been reset' }); 
 
     } catch (err) {
         res.status(400).send({ error: 'Cannot reset password, try again' });
