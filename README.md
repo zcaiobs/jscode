@@ -1,2 +1,2 @@
 # jscode
-Creating a new project random '-' with JS on back-end.
+Creating a new project of login with JS, nodeJS and mongoDB.
