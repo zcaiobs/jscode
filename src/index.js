@@ -7,8 +7,8 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
-app.use(cors({origin: 'http://127.0.0.1:5500'}));
-
+app.use(cors({origin: 'http://localhost:5500'}));
+ 
 require('./app/controllers/index')(app);
 app.listen(3000);
 //app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
